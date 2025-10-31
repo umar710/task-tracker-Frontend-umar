@@ -122,6 +122,7 @@ VITE_API_URL=https://task-tracker-backend-umar.onrender.com
 ## 👨‍💻 Author
 
 **Umer Faruque Syed**
+
 🔗 [Live Demo](https://task-tracker-frontend-umar.vercel.app/)
 
 🔗 [Backend API](https://task-tracker-backend-umar.onrender.com)
