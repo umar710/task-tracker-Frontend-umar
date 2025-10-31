@@ -1,16 +1,131 @@
-# React + Vite
+# 🧭 Task Tracker Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern, responsive task management web app** built with **React + Vite**, offering a sleek UI, real-time task management, and smart analytics — fully integrated with the backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* 📝 **CRUD Operations** — Create, update, and delete tasks
+* 🎨 **Modern UI** — Responsive layout with smooth animations
+* 📊 **Smart Insights** — AI-like analytics and workload stats
+* ⚡ **Real-time Updates** — No page refresh required
+* 🔍 **Filtering & Sorting** — Filter by priority and status
+* ⏰ **Due Date Tracking** — Highlight overdue tasks
+* 🌙 **Clean Design System** — Built with modern CSS variables
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React 18 + Vite
+* **Styling:** CSS (variables, gradients, shadows)
+* **API:** Fetch (REST integration)
+* **Deployment:** Vercel
+* **Backend:** [Task Tracker Backend](https://task-tracker-backend-umar.onrender.com)
+
+---
+
+## 🌐 Live Demo
+
+👉 **[https://task-tracker-frontend-umar.vercel.app/](https://task-tracker-frontend-umar.vercel.app/)**
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone <your-repo-url>
+cd task-tracker-frontend
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Add Environment Variable
+
+Create `.env` file:
+
+```env
+VITE_API_URL=https://task-tracker-backend-umar.onrender.com
+```
+
+### 4️⃣ Start Development Server
+
+```bash
+npm run dev
+```
+
+Frontend runs on **[http://localhost:5173](http://localhost:5173)**
+
+---
+
+## 🧩 Project Structure
+
+```
+src/
+├── components/
+│   ├── TaskForm.jsx
+│   ├── TaskList.jsx
+│   ├── TaskItem.jsx
+│   └── InsightsPanel.jsx
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 📊 API Endpoints Used
+
+| Method | Endpoint     | Description     |
+| ------ | ------------ | --------------- |
+| GET    | `/tasks`     | Get all tasks   |
+| POST   | `/tasks`     | Create new task |
+| PATCH  | `/tasks/:id` | Update task     |
+| DELETE | `/tasks/:id` | Delete task     |
+| GET    | `/insights`  | Fetch analytics |
+
+---
+
+## 🎨 Design System
+
+| Element           | Example         |
+| ----------------- | --------------- |
+| **Primary Color** | `#6366f1`       |
+| **Success**       | `#10b981`       |
+| **Warning**       | `#f59e0b`       |
+| **Error**         | `#ef4444`       |
+| **Font**          | Inter (400–700) |
+
+---
+
+## 🚀 Deployment (Vercel)
+
+```bash
+npm run build
+vercel
+```
+
+Set environment variable in dashboard:
+
+```
+VITE_API_URL=https://task-tracker-backend-umar.onrender.com
+```
+
+---
+
+## 👨‍💻 Author
+
+**Umer Faruque Syed**
+🔗 [Live Demo](https://task-tracker-frontend-umar.vercel.app/)
+
+🔗 [Backend API](https://task-tracker-backend-umar.onrender.com)
+
+📂 [Frontend Repo](https://github.com/your-username/task-tracker-frontend)
+
+
